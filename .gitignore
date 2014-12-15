@@ -16,7 +16,6 @@
 /logs
 
 # project release file
-/*.war
 
 # plugin release files
 /*.zip
