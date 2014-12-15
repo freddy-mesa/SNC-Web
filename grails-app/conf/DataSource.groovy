@@ -31,12 +31,12 @@ environments {
     production {
         dataSource {
             driverClassName = "org.postgresql.Driver"
-            dialect = org.hibernate.dialect.PostgreSQL9Dialect
-            username = "postgre"
-            password = "postgre"
+            dialect = org.hibernate.dialect.PostgreSQL9DialectDialect
+            username = "postgres"
+            password = "postgres"
 
             dbCreate = "update"
-            url = "jdbc:postgresql://23.89.199.19:5432/sncpucmm"
+            url = "jdbc:postgresql://localhost:5432/sncpucmm"
 
             properties {
                // See http://grails.org/doc/latest/guide/conf.html#dataSource for documentation
