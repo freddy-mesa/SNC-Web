@@ -35,7 +35,7 @@ environments {
             username = "postgres"
             password = "postgres"
 
-            dbCreate = "update"
+            dbCreate = "create-drop"
             url = "jdbc:postgresql://localhost:5432/sncpucmm?autoReconnect=true"
 
             properties {
