@@ -17,9 +17,9 @@
 
     <div class="row">
         <div>
-            <div class="panel panel-default">
+            <div class="panel panel-primary">
                 <div class="panel-heading">
-                    Lista de Tours
+                    Lista de Usuarios
                 </div>
                 <div class="panel-body">
                     <div class="table-responsive">
@@ -29,7 +29,7 @@
 
                                 <th>Username</th>
 
-                                <th>Habilidado</th>
+                                <th>Habilitado</th>
 
                             </tr>
                             </thead>

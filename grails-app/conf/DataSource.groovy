@@ -36,7 +36,7 @@ environments {
             password = "postgres"
 
             dbCreate = "update"
-            url = "jdbc:postgresql://localhost:5432/sncpucmm"
+            url = "jdbc:postgresql://localhost:5432/sncpucmm?autoReconnect=true"
 
             properties {
                // See http://grails.org/doc/latest/guide/conf.html#dataSource for documentation
@@ -55,6 +55,8 @@ environments {
                testOnBorrow = true
                testWhileIdle = true
                testOnReturn = false
+               removeAbandoned = "true"
+               removeAbandonedTimeout = 1120
                jdbcInterceptors = "ConnectionState"
                defaultTransactionIsolation = java.sql.Connection.TRANSACTION_READ_COMMITTED
             }

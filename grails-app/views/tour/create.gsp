@@ -14,7 +14,7 @@
 
 <div class="row">
     <div class="col-lg-12">
-        <div class="panel panel-default">
+        <div class="panel panel-primary">
             <div class="panel-heading">
                 Datos del Tour
             </div>

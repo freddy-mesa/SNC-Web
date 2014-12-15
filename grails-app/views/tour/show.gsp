@@ -15,7 +15,7 @@
 </div>
 <div class="row">
     <div>
-        <div class="panel panel-default">
+        <div class="panel panel-primary">
             <div class="panel-heading">
                 Información General
             </div>
@@ -63,7 +63,7 @@
     </div>
     <!-- /.col-lg-6 -->
     <div>
-        <div class="panel panel-default">
+        <div class="panel panel-primary">
             <div class="panel-heading">
                 Puntos de Reunión
             </div>

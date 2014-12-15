@@ -1,19 +1,19 @@
 <%@ page import="sncpucmm.UsuarioTipoUsuario; sncpucmm.Usuario" %>
 
-<div class="fieldcontain ${hasErrors(bean: usuarioInstance, field: 'username', 'error')} required">
+<div class="form-group ${hasErrors(bean: usuarioInstance, field: 'username', 'error')} required">
     <label for="username">
-        <g:message code="usuario.username.label" default="Username" />
+        <label>Username</label>
         <span class="required-indicator">*</span>
     </label>
-    <g:textField name="username" required="" value="${usuarioInstance?.username}"/>
+    <g:textField class="form-control" name="username" required="" value="${usuarioInstance?.username}"/>
 
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: usuarioInstance, field: 'password', 'error')} required">
+<div class="form-group ${hasErrors(bean: usuarioInstance, field: 'password', 'error')} required">
     <label for="password">
-        <g:message code="usuario.password.label" default="Password" />
+        <label>Password</label>
         <span class="required-indicator">*</span>
     </label>
-    <g:textField name="password" required="" value="${usuarioInstance?.password}"/>
+    <g:textField class="form-control" name="password" required="" value="${usuarioInstance?.password}"/>
 
 </div>

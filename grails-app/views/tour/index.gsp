@@ -21,7 +21,7 @@
 <div class="row">
 
     <div>
-        <div class="panel panel-default">
+        <div class="panel panel-primary">
             <div class="panel-heading">
                 Lista de Tours
             </div>

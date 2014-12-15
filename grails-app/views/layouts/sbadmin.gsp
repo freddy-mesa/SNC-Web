@@ -276,14 +276,14 @@
                             <a href="index.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
                         </li>
                         <li>
-                            <g:link controller="usuario" action="index"><i class="fa fa-user fa-fw"></i> Usuarios<span class="fa arrow"></span></a></g:link>
+                            <g:link controller="usuario" action="index"><i class="fa fa-users fa-fw"></i> Usuarios<span class="fa arrow"></span></g:link>
                             <ul class="nav nav-second-level">
                                 <li><g:link controller="usuario" action="index">Index</g:link></li>
                                 <li><g:link controller="usuario" action="create">Crear</g:link></li>
                             </ul>
                         </li>
                         <li>
-                            <g:link controller="tour" action="index"><i class="fa fa-location-arrow fa-fw"></i> Tours<span class="fa arrow"></span></a></g:link>
+                            <g:link controller="tour" action="index"><i class="fa fa-location-arrow fa-fw"></i> Tours<span class="fa arrow"></span></g:link>
                             <ul class="nav nav-second-level">
                                 <li><g:link controller="tour" action="index">Index</g:link></li>
                                 <li><g:link controller="tour" action="create">Crear</g:link></li>
@@ -291,7 +291,7 @@
                             </ul>
                         </li>
                         <li>
-                            <g:link controller="tour"><i class="fa fa-edit fa-fw"></i> Forms</g:link>
+                            <g:link controller="nodo" action="index"><i class="fa fa-circle fa-fw"></i> Nodos</g:link>
                         </li>
                     </ul>
                 </div>

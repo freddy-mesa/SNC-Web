@@ -5,7 +5,7 @@ class Nodo {
     Ubicacion ubicacion
     Integer edificio
     String nombre
-    String activo
+    boolean activo
 
     static constraints = {
         ubicacion nullable: true

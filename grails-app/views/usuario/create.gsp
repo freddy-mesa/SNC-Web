@@ -8,10 +8,11 @@
 	<body>
     <div class="row">
         <div class="col-lg-12">
-            <h1 class="page-header">Crear Usuario</h1>
+            <h1 class="page-header">Usuarios <small>Crear</small></h1>
         </div>
     </div>
-		<div class="row">
+    <div class="row col-lg-3"></div>
+		<div class="row col-lg-6">
 			<g:if test="${flash.message}">
 			<div class="message" role="status">${flash.message}</div>
 			</g:if>
@@ -22,14 +23,21 @@
 				</g:eachError>
 			</ul>
 			</g:hasErrors>
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    Datos
+                </div>
+                <div class="panel-body">
 			<g:form url="[resource:usuarioInstance, action:'save']" >
 				<fieldset class="form">
 					<g:render template="form"/>
 				</fieldset>
 				<fieldset class="buttons">
-					<g:submitButton name="create" class="save" value="${message(code: 'default.button.create.label', default: 'Create')}" />
+					<g:submitButton class="btn btn-primary" name="create" value="Crear" />
 				</fieldset>
 			</g:form>
+                    </div>
+                </div>
 		</div>
 	</body>
 </html>
