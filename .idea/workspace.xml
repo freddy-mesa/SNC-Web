@@ -14,6 +14,8 @@
     <ignored path="$PROJECT_DIR$/target/work/tomcat/" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path=".idea/dataSources.local.xml" />
+    <ignored path="$PROJECT_DIR$/target/work/gspcompile/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,101 +35,35 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="DataSource.groovy" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="UsuarioController.groovy" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/controllers/sncpucmm/UsuarioController.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-21.434782" vertical-offset="153" max-vertical-offset="4165">
+              <caret line="38" column="18" selection-start-line="38" selection-start-column="18" selection-end-line="38" selection-end-column="18" />
+              <folding>
+                <element signature="e#18#50#0" expanded="true" />
+                <element signature="n#!!block;n#friendFindRequest#0;n#!!block;n#UsuarioController#0" expanded="false" />
+                <element signature="n#!!block;n#friendsShareLocationRequest#0;n#!!block;n#UsuarioController#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DataSource.groovy" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/conf/DataSource.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5857143" vertical-offset="458" max-vertical-offset="1207">
-              <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="1207">
+              <caret line="34" column="33" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.gsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/views/tour/index.gsp">
+      <file leaf-file-name="Config.groovy" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/grails-app/conf/Config.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.3877552" vertical-offset="323" max-vertical-offset="1360">
-              <caret line="23" column="39" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="create.gsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/views/tour/create.gsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.0405406" vertical-offset="790" max-vertical-offset="1717">
-              <caret line="51" column="51" selection-start-line="51" selection-start-column="51" selection-end-line="51" selection-end-column="51" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.gsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/views/nodo/index.gsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.0816326" vertical-offset="238" max-vertical-offset="1122">
-              <caret line="20" column="43" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="show.gsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/views/tour/show.gsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.4489796" vertical-offset="169" max-vertical-offset="1938">
-              <caret line="17" column="39" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="create.gsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/views/usuario/create.gsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.6938776" vertical-offset="391" max-vertical-offset="833">
-              <caret line="25" column="43" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="43" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_form.gsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/views/usuario/_form.gsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.3877552" vertical-offset="0" max-vertical-offset="425">
-              <caret line="4" column="30" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="edit.gsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/views/usuario/edit.gsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.6938776" vertical-offset="238" max-vertical-offset="782">
-              <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.gsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/views/usuario/index.gsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.6938776" vertical-offset="289" max-vertical-offset="1088">
-              <caret line="19" column="43" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="show.gsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/views/usuario/show.gsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.8163266" vertical-offset="119" max-vertical-offset="1428">
-              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.35114503" vertical-offset="2043" max-vertical-offset="3638">
+              <caret line="131" column="29" selection-start-line="131" selection-start-column="29" selection-end-line="131" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -141,28 +77,9 @@
     </FindUsagesManager>
   </component>
   <component name="IdeDocumentHistory">
-    <option name="changedFiles">
+    <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/grails-app/domain/sncpucmm/Nodo.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/views/nodo/_form.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/views/nodo/edit.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/domain/sncpucmm/Ubicacion.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/controllers/sncpucmm/NodoController.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/controllers/sncpucmm/TourController.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/controllers/sncpucmm/UsuarioController.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/views/nodo/show.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/views/layouts/sbadmin.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/views/nodo/create.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/views/usuario/edit.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/views/usuario/show.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/views/usuario/_form.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/views/usuario/create.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/views/usuario/index.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/views/nodo/index.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/views/tour/index.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/views/tour/create.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/views/tour/show.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/conf/DataSource.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/conf/Config.groovy" />
       </list>
     </option>
   </component>
@@ -172,8 +89,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -226,6 +143,55 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager" selected="Grails.Grails:SNCWeb">
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
+      <module name="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
+      <method />
+    </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
@@ -242,6 +208,11 @@
       <setting name="launchBrowser" value="false" />
       <method />
     </configuration>
+    <configuration default="true" type="JarApplication" factoryName="JAR Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <envs />
+      <method />
+    </configuration>
     <configuration default="true" type="GroovyScriptRunConfiguration" factoryName="Groovy">
       <module name="" />
       <setting name="path" value="" />
@@ -249,30 +220,6 @@
       <setting name="params" value="" />
       <setting name="workDir" value="file://$PROJECT_DIR$" />
       <setting name="debug" value="false" />
-      <method />
-    </configuration>
-    <configuration default="true" type="Remote" factoryName="Remote">
-      <option name="USE_SOCKET_TRANSPORT" value="true" />
-      <option name="SERVER_MODE" value="false" />
-      <option name="SHMEM_ADDRESS" value="javadebug" />
-      <option name="HOST" value="localhost" />
-      <option name="PORT" value="5005" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -303,25 +250,36 @@
       <listeners />
       <method />
     </configuration>
-    <configuration default="true" type="JUnit" factoryName="JUnit">
+    <configuration default="true" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
+      <module name="" />
       <envs />
-      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <method />
+    </configuration>
+    <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" appDescriptorForEmulator="Android" class_name="" emulatorAdlOptions="" method_name="" package_name="" scope="Class">
+      <option name="BCName" value="" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="FlashPlayerDebugger.exe" />
+        </LauncherParameters>
+      </option>
+      <option name="moduleName" value="" />
+      <option name="trusted" value="true" />
       <method />
     </configuration>
     <configuration default="true" type="FlashRunConfigurationType" factoryName="Flash App">
@@ -380,8 +338,12 @@
       <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
       <method />
     </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
     <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
+        <option name="executionName" />
         <option name="externalProjectPath" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" />
@@ -395,18 +357,17 @@
       </ExternalSystemSettings>
       <method />
     </configuration>
-    <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" appDescriptorForEmulator="Android" class_name="" emulatorAdlOptions="" method_name="" package_name="" scope="Class">
-      <option name="BCName" value="" />
-      <option name="launcherParameters">
-        <LauncherParameters>
-          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
-          <option name="launcherType" value="OSDefault" />
-          <option name="newPlayerInstance" value="false" />
-          <option name="playerPath" value="FlashPlayerDebugger.exe" />
-        </LauncherParameters>
-      </option>
-      <option name="moduleName" value="" />
-      <option name="trusted" value="true" />
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
@@ -426,41 +387,6 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="" />
       <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="Application" factoryName="Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
-      <module name="" />
-      <option name="ACTIVITY_CLASS" value="" />
-      <option name="MODE" value="default_activity" />
-      <option name="DEPLOY" value="true" />
-      <option name="ARTIFACT_NAME" value="" />
-      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
-      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
-      <option name="PREFERRED_AVD" value="" />
-      <option name="USE_COMMAND_LINE" value="true" />
-      <option name="COMMAND_LINE" value="" />
-      <option name="WIPE_USER_DATA" value="false" />
-      <option name="DISABLE_BOOT_ANIMATION" value="false" />
-      <option name="NETWORK_SPEED" value="full" />
-      <option name="NETWORK_LATENCY" value="none" />
-      <option name="CLEAR_LOGCAT" value="false" />
-      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
-      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
       <method />
     </configuration>
     <configuration default="false" name="Grails:SNCWeb" type="GrailsRunConfigurationType" factoryName="Grails">
@@ -497,6 +423,7 @@
     <task active="true" id="Default" summary="Default task">
       <changelist id="8d1dd063-b3bb-4953-9b62-9f0d505f6241" name="Default" comment="" />
       <created>1415074585605</created>
+      <option name="number" value="Default" />
       <updated>1415074585605</updated>
       <workItem from="1415074588307" duration="4114000" />
       <workItem from="1415078832097" duration="2310000" />
@@ -525,11 +452,12 @@
       <workItem from="1418601899470" duration="7776000" />
       <workItem from="1418669615468" duration="2350000" />
       <workItem from="1418672102797" duration="12569000" />
+      <workItem from="1418745901682" duration="2147000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="154069000" />
+    <option name="totallyTimeSpent" value="156216000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -552,43 +480,43 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31723028" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Console" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32482994" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31685394" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3792517" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3282313" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Grails View" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37386706" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31723028" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Grails View" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19936034" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31685394" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3790776" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3282313" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32993197" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Console" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32482994" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32993197" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -612,12 +540,21 @@
     <breakpoint-manager>
       <option name="time" value="5" />
     </breakpoint-manager>
+    <watches-manager />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/grails-app/views/usuario/show.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="1428">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/domain/sncpucmm/Usuario.groovy">
       <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
         <state />
@@ -659,13 +596,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/domain/sncpucmm/Tour.groovy">
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="374">
           <caret line="13" column="36" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
         </state>
-      </provider>
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.project">
@@ -689,128 +626,128 @@
           <OriginalElement />
           <nodes>
             <node x="" y="">_GrailsDocs</node>
-            <node x="" y="">_GrailsClasspath</node>
-            <node x="" y="">javassist</node>
-            <node x="" y="">SetVersion</node>
-            <node x="" y="">InstallAppTemplates_</node>
-            <node x="" y="">CreateUnitTest</node>
-            <node x="" y="">_GrailsArgParsing</node>
-            <node x="" y="">jline</node>
-            <node x="" y="">Init</node>
-            <node x="" y="">Shell</node>
-            <node x="" y="">fr</node>
-            <node x="" y="">MigrateDocs</node>
-            <node x="" y="">_GrailsSettings</node>
-            <node x="" y="">groovy</node>
-            <node x="" y="">Play</node>
-            <node x="" y="">asset</node>
-            <node x="" y="">_GrailsCreateArtifacts</node>
-            <node x="" y="">sncpucmm</node>
-            <node x="" y="">spock</node>
-            <node x="" y="">biz</node>
-            <node x="" y="">hsqlServlet</node>
-            <node x="" y="">_GrailsInit</node>
-            <node x="" y="">grails</node>
-            <node x="" y="">RemoveProxy_</node>
-            <node x="" y="">_GrailsPlugins</node>
-            <node x="" y="">CreatePlugin_</node>
-            <node x="" y="">CreateIntegrationTest</node>
-            <node x="" y="">InstallDependency</node>
-            <node x="" y="">ListPluginUpdates</node>
-            <node x="" y="">assembly</node>
-            <node x="" y="">Clean</node>
-            <node x="" y="">Wrapper</node>
+            <node x="" y="">_PackagePlugins</node>
+            <node x="" y="">_GrailsPackage</node>
+            <node x="" y="">HelpEvaluatingCategory</node>
             <node x="" y="">gant</node>
-            <node x="" y="">net</node>
-            <node x="" y="">org</node>
-            <node x="" y="">IntegrateWith</node>
-            <node x="" y="">Console</node>
-            <node x="" y="">groovyx</node>
-            <node x="" y="">groovyjarjarasm</node>
-            <node x="" y="">CreateMultiProjectBuild_</node>
-            <node x="" y="">liquibase</node>
-            <node x="" y="">War</node>
-            <node x="" y="">sunw</node>
-            <node x="" y="">UrlMappingsReport</node>
-            <node x="" y="">ideaprojects</node>
+            <node x="" y="">ListPlugins_</node>
+            <node x="" y="">Init</node>
+            <node x="" y="">biz</node>
+            <node x="" y="">spock</node>
+            <node x="" y="">java</node>
+            <node x="" y="">Doc</node>
+            <node x="" y="">RunScript</node>
+            <node x="" y="">javafx</node>
+            <node x="" y="">Wrapper</node>
+            <node x="" y="">images</node>
+            <node x="" y="">_GrailsWrapper</node>
+            <node x="" y="">antlr</node>
+            <node x="" y="">RunApp</node>
+            <node x="" y="">aj</node>
+            <node x="" y="">grails</node>
+            <node x="" y="">_GrailsInit</node>
+            <node x="" y="">META-INF</node>
+            <node x="" y="">SetVersion</node>
+            <node x="" y="">groovy</node>
+            <node x="" y="">CreateService</node>
             <node x="" y="">Help_</node>
-            <node x="" y="">src</node>
+            <node x="" y="">_PluginDependencies</node>
+            <node x="" y="">Package</node>
+            <node x="" y="">groovyjarjarantlr</node>
+            <node x="" y="">CreateTagLib</node>
+            <node x="" y="">netscape</node>
             <node x="" y="">_GrailsBootstrap</node>
             <node x="" y="">BugReport</node>
-            <node x="" y="">classes</node>
-            <node x="" y="">_GrailsPluginDev</node>
-            <node x="" y="">_PackagePlugins</node>
-            <node x="" y="">OSGI-INF</node>
-            <node x="" y="">UninstallPlugin</node>
-            <node x="" y="">_GrailsEvents</node>
-            <node x="" y="">ListPlugins_</node>
-            <node x="" y="">resources</node>
-            <node x="" y="">com</node>
-            <node x="" y="">Bootstrap</node>
-            <node x="" y="">SetGrailsVersion</node>
-            <node x="" y="">netscape</node>
-            <node x="" y="">_PluginDependencies</node>
-            <node x="" y="">PluginInfo_</node>
-            <node x="" y="">javax</node>
-            <node x="" y="">RunScript</node>
-            <node x="" y="">jsr166y</node>
-            <node x="" y="">CreateApp_</node>
-            <node x="" y="">_GrailsPackage</node>
-            <node x="" y="">_GrailsTest</node>
-            <node x="" y="">TestApp</node>
-            <node x="" y="">SetProxy_</node>
-            <node x="" y="">sl</node>
-            <node x="" y="">Interactive</node>
-            <node x="" y="">antlr</node>
-            <node x="" y="">JQueryTagLib</node>
-            <node x="" y="">javafx</node>
-            <node x="" y="">CreateTagLib</node>
-            <node x="" y="">RunWar</node>
-            <node x="" y="">RefreshDependencies</node>
-            <node x="" y="">JQueryService</node>
-            <node x="" y="">_GrailsWar</node>
             <node x="" y="">CreateController</node>
-            <node x="" y="">RunApp</node>
-            <node x="" y="">CreateFilters</node>
-            <node x="" y="">InstallTemplates</node>
-            <node x="" y="">_GrailsProxy</node>
-            <node x="" y="">Compile</node>
-            <node x="" y="">_GrailsCompile</node>
-            <node x="" y="">images</node>
-            <node x="" y="">groovyjarjarantlr</node>
-            <node x="" y="">PackagePlugin_</node>
-            <node x="" y="">dist</node>
-            <node x="" y="">InstallPlugin</node>
-            <node x="" y="">Doc</node>
-            <node x="" y="">DependencyReport</node>
-            <node x="" y="">licenses</node>
-            <node x="" y="">oracle</node>
-            <node x="" y="">StopApp</node>
-            <node x="" y="">sun</node>
-            <node x="" y="">groovyjarjarcommonscli</node>
-            <node x="" y="">CreateService</node>
-            <node x="" y="">Package</node>
-            <node x="" y="">AddProxy_</node>
-            <node x="" y="">dsld</node>
-            <node x="" y="">_GrailsWrapper</node>
-            <node x="" y="">CreatePom</node>
             <node x="" y="">CleanAll</node>
+            <node x="" y="">sun</node>
+            <node x="" y="">groovyx</node>
+            <node x="" y="">InstallAppTemplates_</node>
+            <node x="" y="">jline</node>
+            <node x="" y="">assembly</node>
+            <node x="" y="">sl</node>
+            <node x="" y="">OSGI-INF</node>
+            <node x="" y="">jsr166y</node>
+            <node x="" y="">TestApp</node>
             <node x="" y="">_GrailsRun</node>
-            <node x="" y="">_GrailsClean</node>
-            <node x="" y="">junit</node>
-            <node x="" y="">HelpEvaluatingCategory</node>
-            <node x="" y="">ClearProxy_</node>
-            <node x="" y="">META-INF</node>
-            <node x="" y="">CreateDomainClass</node>
-            <node x="" y="">aj</node>
-            <node x="" y="">Alias</node>
-            <node x="" y="">JQueryResourceTagLib</node>
             <node x="" y="">CreateScript</node>
-            <node x="" y="">Stats</node>
-            <node x="" y="">jdk</node>
-            <node x="" y="">java</node>
+            <node x="" y="">UninstallPlugin</node>
+            <node x="" y="">UrlMappingsReport</node>
             <node x="" y="">_GrailsCreateProject</node>
+            <node x="" y="">dsld</node>
+            <node x="" y="">hsqlServlet</node>
+            <node x="" y="">_GrailsPlugins</node>
+            <node x="" y="">jdk</node>
+            <node x="" y="">Play</node>
+            <node x="" y="">PluginInfo_</node>
+            <node x="" y="">licenses</node>
+            <node x="" y="">IntegrateWith</node>
+            <node x="" y="">StopApp</node>
+            <node x="" y="">asset</node>
+            <node x="" y="">com</node>
+            <node x="" y="">RefreshDependencies</node>
+            <node x="" y="">dist</node>
+            <node x="" y="">liquibase</node>
+            <node x="" y="">CreatePom</node>
+            <node x="" y="">groovyjarjarasm</node>
+            <node x="" y="">ClearProxy_</node>
+            <node x="" y="">javax</node>
+            <node x="" y="">Interactive</node>
+            <node x="" y="">_GrailsPluginDev</node>
+            <node x="" y="">net</node>
+            <node x="" y="">sunw</node>
+            <node x="" y="">javassist</node>
+            <node x="" y="">CreateUnitTest</node>
+            <node x="" y="">ListPluginUpdates</node>
+            <node x="" y="">oracle</node>
             <node x="" y="">uglifyjs</node>
+            <node x="" y="">InstallDependency</node>
+            <node x="" y="">CreateFilters</node>
+            <node x="" y="">_GrailsEvents</node>
+            <node x="" y="">_GrailsTest</node>
+            <node x="" y="">Stats</node>
+            <node x="" y="">groovyjarjarcommonscli</node>
+            <node x="" y="">RemoveProxy_</node>
+            <node x="" y="">SetProxy_</node>
+            <node x="" y="">InstallTemplates</node>
+            <node x="" y="">classes</node>
+            <node x="" y="">_GrailsProxy</node>
+            <node x="" y="">War</node>
+            <node x="" y="">Clean</node>
+            <node x="" y="">fr</node>
+            <node x="" y="">Compile</node>
+            <node x="" y="">JQueryService</node>
+            <node x="" y="">CreateMultiProjectBuild_</node>
+            <node x="" y="">AddProxy_</node>
+            <node x="" y="">Shell</node>
+            <node x="" y="">DependencyReport</node>
+            <node x="" y="">sncpucmm</node>
+            <node x="" y="">CreateDomainClass</node>
+            <node x="" y="">PackagePlugin_</node>
+            <node x="" y="">Console</node>
+            <node x="" y="">Bootstrap</node>
+            <node x="" y="">_GrailsCreateArtifacts</node>
+            <node x="" y="">_GrailsWar</node>
+            <node x="" y="">_GrailsClasspath</node>
+            <node x="" y="">InstallPlugin</node>
+            <node x="" y="">ideaprojects</node>
+            <node x="" y="">junit</node>
+            <node x="" y="">org</node>
+            <node x="" y="">src</node>
+            <node x="" y="">_GrailsArgParsing</node>
+            <node x="" y="">_GrailsSettings</node>
+            <node x="" y="">CreateIntegrationTest</node>
+            <node x="" y="">JQueryResourceTagLib</node>
+            <node x="" y="">_GrailsClean</node>
+            <node x="" y="">resources</node>
+            <node x="" y="">RunWar</node>
+            <node x="" y="">MigrateDocs</node>
+            <node x="" y="">SetGrailsVersion</node>
+            <node x="" y="">JQueryTagLib</node>
+            <node x="" y="">Alias</node>
+            <node x="" y="">_GrailsCompile</node>
+            <node x="" y="">CreatePlugin_</node>
+            <node x="" y="">CreateApp_</node>
           </nodes>
           <notes />
           <edges />
@@ -828,36 +765,36 @@
           <ID>JAVA</ID>
           <OriginalElement>sncpucmm</OriginalElement>
           <nodes>
-            <node x="" y="">sncpucmm.TipoUsuario</node>
-            <node x="" y="">sncpucmm.LocalizacionUsuarioSpec</node>
-            <node x="" y="">sncpucmm.DetalleUsuarioTourSpec</node>
-            <node x="" y="">sncpucmm.UsuarioTipoUsuario</node>
-            <node x="" y="">sncpucmm.FollowUsuario</node>
-            <node x="" y="">sncpucmm.DetalleUsuarioTour</node>
-            <node x="" y="">sncpucmm.Ubicacion</node>
-            <node x="" y="">sncpucmm.Tour</node>
-            <node x="" y="">sncpucmm.NeighborSpec</node>
-            <node x="" y="">sncpucmm.VideoLlamadaSpec</node>
             <node x="" y="">sncpucmm.UsuarioTour</node>
-            <node x="" y="">sncpucmm.UbicacionSpec</node>
-            <node x="" y="">sncpucmm.UsuarioTourSpec</node>
-            <node x="" y="">sncpucmm.Usuario</node>
-            <node x="" y="">sncpucmm.TourSpec</node>
-            <node x="" y="">sncpucmm.PuntoReunionTour</node>
-            <node x="" y="">sncpucmm.UsuarioFacebook</node>
-            <node x="" y="">sncpucmm.UsuarioController</node>
-            <node x="" y="">sncpucmm.FollowUsuarioSpec</node>
-            <node x="" y="">sncpucmm.CoordenadaNodoSpec</node>
-            <node x="" y="">sncpucmm.TourController</node>
-            <node x="" y="">sncpucmm.LocalizacionUsuario</node>
-            <node x="" y="">sncpucmm.UsuarioControllerSpec</node>
+            <node x="" y="">sncpucmm.NeighborSpec</node>
+            <node x="" y="">sncpucmm.LocalizacionUsuarioSpec</node>
+            <node x="" y="">sncpucmm.FollowUsuario</node>
             <node x="" y="">sncpucmm.PuntoReunionTourSpec</node>
-            <node x="" y="">sncpucmm.Nodo</node>
-            <node x="" y="">sncpucmm.CoordenadaNodo</node>
-            <node x="" y="">sncpucmm.TourControllerSpec</node>
-            <node x="" y="">sncpucmm.CuentaFacebookSpec</node>
+            <node x="" y="">sncpucmm.VideoLlamadaSpec</node>
+            <node x="" y="">sncpucmm.UsuarioFacebook</node>
+            <node x="" y="">sncpucmm.UbicacionSpec</node>
+            <node x="" y="">sncpucmm.FollowUsuarioSpec</node>
             <node x="" y="">sncpucmm.Neighbor</node>
             <node x="" y="">sncpucmm.UsuarioFacebookSpec</node>
+            <node x="" y="">sncpucmm.TipoUsuario</node>
+            <node x="" y="">sncpucmm.DetalleUsuarioTourSpec</node>
+            <node x="" y="">sncpucmm.DetalleUsuarioTour</node>
+            <node x="" y="">sncpucmm.CoordenadaNodoSpec</node>
+            <node x="" y="">sncpucmm.UsuarioController</node>
+            <node x="" y="">sncpucmm.TourSpec</node>
+            <node x="" y="">sncpucmm.CoordenadaNodo</node>
+            <node x="" y="">sncpucmm.Usuario</node>
+            <node x="" y="">sncpucmm.Tour</node>
+            <node x="" y="">sncpucmm.TourControllerSpec</node>
+            <node x="" y="">sncpucmm.TourController</node>
+            <node x="" y="">sncpucmm.UsuarioTourSpec</node>
+            <node x="" y="">sncpucmm.PuntoReunionTour</node>
+            <node x="" y="">sncpucmm.UsuarioTipoUsuario</node>
+            <node x="" y="">sncpucmm.UsuarioControllerSpec</node>
+            <node x="" y="">sncpucmm.Nodo</node>
+            <node x="" y="">sncpucmm.CuentaFacebookSpec</node>
+            <node x="" y="">sncpucmm.Ubicacion</node>
+            <node x="" y="">sncpucmm.LocalizacionUsuario</node>
           </nodes>
           <notes />
           <edges />
@@ -877,9 +814,9 @@
           <ID>JAVA</ID>
           <OriginalElement>sncpucmm.CoordenadaNodo</OriginalElement>
           <nodes>
-            <node x="" y="">groovy.lang.GroovyObjectSupport</node>
             <node x="" y="">groovy.lang.GroovyObject</node>
             <node x="" y="">sncpucmm.CoordenadaNodo</node>
+            <node x="" y="">groovy.lang.GroovyObjectSupport</node>
           </nodes>
           <notes />
           <edges />
@@ -894,140 +831,133 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/domain/sncpucmm/Tour.groovy">
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.6666667" vertical-offset="0" max-vertical-offset="374">
           <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/sncpucmm/TipoUsuario.groovy">
       <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/sncpucmm/TipoUsuario.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.6666667" vertical-offset="0" max-vertical-offset="357">
           <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/sncpucmm/UsuarioTipoUsuario.groovy">
       <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/sncpucmm/UsuarioTipoUsuario.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.29274294" vertical-offset="306" max-vertical-offset="1870">
           <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/sncpucmm/CoordenadaNodo.groovy">
       <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/sncpucmm/CoordenadaNodo.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.041820418" vertical-offset="0" max-vertical-offset="813">
           <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/sncpucmm/PuntoReunionTour.groovy">
       <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/sncpucmm/PuntoReunionTour.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.3333333" vertical-offset="0" max-vertical-offset="289">
           <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/sncpucmm/LocalizacionUsuario.groovy">
       <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/sncpucmm/LocalizacionUsuario.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.6666667" vertical-offset="0" max-vertical-offset="289">
           <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/sncpucmm/UsuarioTour.groovy">
       <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/sncpucmm/UsuarioTour.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.6666667" vertical-offset="0" max-vertical-offset="340">
           <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/sncpucmm/DetalleUsuarioTour.groovy">
       <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/sncpucmm/DetalleUsuarioTour.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.3333333" vertical-offset="0" max-vertical-offset="374">
           <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/sncpucmm/FollowUsuario.groovy">
       <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/sncpucmm/FollowUsuario.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="340">
           <caret line="5" column="28" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="28" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/sncpucmm/CompartirUbicacion.groovy">
       <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/sncpucmm/CompartirUbicacion.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="272">
           <caret line="2" column="24" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="24" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/sncpucmm/CompartirUsuario.groovy">
       <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/sncpucmm/CompartirUsuario.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="289">
           <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/sncpucmm/Usuario.groovy">
       <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/sncpucmm/Usuario.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.509434" vertical-offset="243" max-vertical-offset="850">
           <caret line="19" column="38" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/sncpucmm/UsuarioFacebook.groovy">
       <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/sncpucmm/UsuarioFacebook.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="425">
           <caret line="14" column="12" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
           <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/conf/Config.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.07906977" vertical-offset="255" max-vertical-offset="2414">
-          <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
         </state>
       </provider>
     </entry>
@@ -1035,26 +965,24 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1428">
           <caret line="50" column="54" selection-start-line="50" selection-start-column="54" selection-end-line="50" selection-end-column="54" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/domain/sncpucmm/Nodo.groovy">
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.4791667" vertical-offset="0" max-vertical-offset="323">
           <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
           <folding />
         </state>
       </provider>
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/views/nodo/_form.gsp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-4.1836734" vertical-offset="118" max-vertical-offset="476">
           <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1062,25 +990,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="459">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/domain/sncpucmm/Ubicacion.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.4166666" vertical-offset="0" max-vertical-offset="289">
-          <caret line="4" column="29" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
       <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
         <state />
       </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/Programs/grails-2.4.3/lib/org.codehaus.groovy/groovy-all/jars/groovy-all-2.3.6-sources.jar!/org/codehaus/groovy/runtime/NullObject.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7770492" vertical-offset="477" max-vertical-offset="2329">
-          <caret line="64" column="7" selection-start-line="64" selection-start-column="7" selection-end-line="64" selection-end-column="7" />
+        <state vertical-scroll-proportion="-1.4166666" vertical-offset="0" max-vertical-offset="289">
+          <caret line="4" column="29" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="29" />
           <folding />
         </state>
       </provider>
@@ -1107,10 +1026,132 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/nodo/show.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.2837838" vertical-offset="670" max-vertical-offset="935">
+          <caret line="45" column="42" selection-start-line="45" selection-start-column="42" selection-end-line="45" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/layouts/sbadmin.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6470587" vertical-offset="4880" max-vertical-offset="5729">
+          <caret line="295" column="0" selection-start-line="295" selection-start-column="0" selection-end-line="295" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/nodo/create.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.0408163" vertical-offset="0" max-vertical-offset="748">
+          <caret line="3" column="44" selection-start-line="3" selection-start-column="44" selection-end-line="3" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/nodo/edit.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.7755103" vertical-offset="0" max-vertical-offset="799">
+          <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/tour/edit.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1734">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/tour/puntosreunion.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="305">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/usuario/edit.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="782">
+          <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/usuario/show.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="1428">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/usuario/_form.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="425">
+          <caret line="4" column="30" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/usuario/create.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="391" max-vertical-offset="833">
+          <caret line="25" column="43" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/usuario/index.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="1088">
+          <caret line="19" column="43" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/nodo/index.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="1122">
+          <caret line="20" column="43" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/tour/index.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="323" max-vertical-offset="1360">
+          <caret line="23" column="39" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/tour/create.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="790" max-vertical-offset="1717">
+          <caret line="51" column="51" selection-start-line="51" selection-start-column="51" selection-end-line="51" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/tour/show.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="169" max-vertical-offset="1938">
+          <caret line="17" column="39" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/conf/DataSource.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="1207">
+          <caret line="34" column="33" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/controllers/sncpucmm/UsuarioController.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.652174" vertical-offset="153" max-vertical-offset="4165">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        <state vertical-scroll-proportion="-21.434782" vertical-offset="153" max-vertical-offset="4165">
+          <caret line="38" column="18" selection-start-line="38" selection-start-column="18" selection-end-line="38" selection-end-column="18" />
           <folding>
             <element signature="e#18#50#0" expanded="true" />
             <element signature="n#!!block;n#friendFindRequest#0;n#!!block;n#UsuarioController#0" expanded="false" />
@@ -1119,130 +1160,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/nodo/show.gsp">
+    <entry file="file://$PROJECT_DIR$/grails-app/conf/Config.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.2837838" vertical-offset="670" max-vertical-offset="935">
-          <caret line="45" column="42" selection-start-line="45" selection-start-column="42" selection-end-line="45" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/layouts/sbadmin.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.6470587" vertical-offset="4880" max-vertical-offset="5729">
-          <caret line="295" column="0" selection-start-line="295" selection-start-column="0" selection-end-line="295" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/nodo/create.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.0408163" vertical-offset="0" max-vertical-offset="748">
-          <caret line="3" column="44" selection-start-line="3" selection-start-column="44" selection-end-line="3" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/nodo/edit.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.7755103" vertical-offset="0" max-vertical-offset="799">
-          <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/tour/edit.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1734">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/tour/puntosreunion.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="305">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/usuario/edit.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.6938776" vertical-offset="238" max-vertical-offset="782">
-          <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/usuario/show.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.8163266" vertical-offset="119" max-vertical-offset="1428">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/usuario/_form.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.3877552" vertical-offset="0" max-vertical-offset="425">
-          <caret line="4" column="30" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/usuario/create.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.6938776" vertical-offset="391" max-vertical-offset="833">
-          <caret line="25" column="43" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/usuario/index.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.6938776" vertical-offset="289" max-vertical-offset="1088">
-          <caret line="19" column="43" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/nodo/index.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.0816326" vertical-offset="238" max-vertical-offset="1122">
-          <caret line="20" column="43" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/tour/index.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.3877552" vertical-offset="323" max-vertical-offset="1360">
-          <caret line="23" column="39" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/tour/create.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.0405406" vertical-offset="790" max-vertical-offset="1717">
-          <caret line="51" column="51" selection-start-line="51" selection-start-column="51" selection-end-line="51" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/tour/show.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.4489796" vertical-offset="169" max-vertical-offset="1938">
-          <caret line="17" column="39" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/conf/DataSource.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5857143" vertical-offset="458" max-vertical-offset="1207">
-          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.35114503" vertical-offset="2043" max-vertical-offset="3638">
+          <caret line="131" column="29" selection-start-line="131" selection-start-column="29" selection-end-line="131" selection-end-column="29" />
           <folding />
         </state>
       </provider>
@@ -1351,4 +1272,3 @@
     </states>
   </component>
 </project>
-

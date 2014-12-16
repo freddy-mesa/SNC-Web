@@ -1,3 +1,5 @@
+import org.apache.log4j.PatternLayout
+
 // locations to search for config files that get merged into the main config;
 // config files can be ConfigSlurper scripts, Java properties files, or classes
 // in the classpath in ConfigSlurper format
@@ -97,24 +99,94 @@ environments {
 }
 
 // log4j configuration
-log4j.main = {
+//log4j.main = {
     // Example of changing the log pattern for the default console appender:
     //
     //appenders {
     //    console name:'stdout', layout:pattern(conversionPattern: '%c{2} %m%n')
     //}
 
-    error  'org.codehaus.groovy.grails.web.servlet',        // controllers
-           'org.codehaus.groovy.grails.web.pages',          // GSP
-           'org.codehaus.groovy.grails.web.sitemesh',       // layouts
-           'org.codehaus.groovy.grails.web.mapping.filter', // URL mapping
-           'org.codehaus.groovy.grails.web.mapping',        // URL mapping
-           'org.codehaus.groovy.grails.commons',            // core / classloading
-           'org.codehaus.groovy.grails.plugins',            // plugins
-           'org.codehaus.groovy.grails.orm.hibernate',      // hibernate integration
-           'org.springframework',
-           'org.hibernate',
-           'net.sf.ehcache.hibernate'
+//    error  'org.codehaus.groovy.grails.web.servlet',        // controllers
+//           'org.codehaus.groovy.grails.web.pages',          // GSP
+//           'org.codehaus.groovy.grails.web.sitemesh',       // layouts
+//           'org.codehaus.groovy.grails.web.mapping.filter', // URL mapping
+ //          'org.codehaus.groovy.grails.web.mapping',        // URL mapping
+ //          'org.codehaus.groovy.grails.commons',            // core / classloading
+ //          'org.codehaus.groovy.grails.plugins',            // plugins
+ //          'org.codehaus.groovy.grails.orm.hibernate',      // hibernate integration
+   //        'org.springframework',
+    //       'org.hibernate',
+    //       'net.sf.ehcache.hibernate'
+//}
+
+// If we are running under tomcat, this is the tomcat base
+def logHome = "./logs"
+environments {
+    production {
+        logHome = (System.getProperty("catalina.base") ?: ".") + "/logs"
+    }
+}
+
+// Ensure the log directory exists
+new File(logHome).mkdirs()
+def applicationName = appName
+
+log4j.main = {
+    def layout = new PatternLayout("%d %-5p %c %x - %m%n")
+    def logName = { String baseName -> "${logHome}/${applicationName}-${baseName}.log" }
+
+    // Only configure file appenders if running under tomcat
+    appenders {
+        console name: 'stdout', layout: pattern(conversionPattern: "%-5p %c{2} - %m%n"), threshold: Level.INFO
+        console name: 'stderr', layout: pattern(conversionPattern: "%-5p %c{2} - %m%n"), threshold: Level.ERROR
+
+        // Disable the stacktrace.log file, it's already going to error anyway
+        'null' name: 'stacktrace'
+
+        rollingFile name: "errorLog", threshold: Level.ERROR, fileName: logName('error'), layout: layout, immediateFlush: true, maxFileSize: "100MB", maxBackupIndex: 5
+        rollingFile name: "infoLog", threshold: Level.INFO, fileName: logName('info'), layout: layout, maxFileSize: "100MB", maxBackupIndex: 5
+        rollingFile name: "debugLog", threshold: Level.DEBUG, fileName: logName('debug'), layout: layout, maxFileSize: "100MB", maxBackupIndex: 5
+    }
+
+    def infoLogged = [
+            'grails.app.conf',
+            'grails.app.controllers.sncpucmm',
+            'grails.app.domain.sncpucmm',
+            'grails.plugin.databasemigration'
+    ]
+
+    // Mirror logs to stdout and info logging
+    environments {
+        development {
+            info stdout: infoLogged, infoLog: infoLogged
+            debug debugLog: infoLogged
+        }
+        test {
+            info stdout: infoLogged, infoLog: infoLogged
+        }
+        production {
+            info infoLog: infoLogged
+            error errorLog: infoLogged
+            debug debugLog: infoLogged
+        }
+    }
+
+    error 'org.codehaus.groovy.grails.web.servlet', //  controllers
+            'org.codehaus.groovy.grails.web.pages', //  GSP
+            'org.codehaus.groovy.grails.web.sitemesh', //  layouts
+            'org.codehaus.groovy.grails.web.mapping.filter', // URL mapping
+            'org.codehaus.groovy.grails.web.mapping', // URL mapping
+            'org.codehaus.groovy.grails.commons', // core / classloading
+            'org.codehaus.groovy.grails.plugins', // plugins
+            'org.codehaus.groovy.grails.orm.hibernate', // hibernate integration
+            'grails.spring',
+            'org.springframework',
+            'org.hibernate'
+
+    // Per docs, can't put environment blocks inside of root block
+    root {
+        error 'errorLog', 'stderr'
+    }
 }
 
 
