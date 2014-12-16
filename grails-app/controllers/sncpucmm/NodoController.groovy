@@ -105,6 +105,7 @@ class NodoController {
         }
     }
 
+    @Secured(['permitAll'])
     def actualizar (){
         def nodos = Nodo.list()
         def ubicaciones = Ubicacion.list()
