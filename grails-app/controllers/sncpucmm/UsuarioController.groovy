@@ -134,8 +134,8 @@ class UsuarioController {
         def usuario = UsuarioFacebook.findByFacebookId(new Long(request.getString("id")))
 
         users.each {
-            def followed = new UsuarioFacebook(facebookId: new Long(it)).save(flush: true, failOnError: true)
-            //def followed = UsuarioFacebook.findByFacebookId(new Long(it))
+            //def followed = new UsuarioFacebook(facebookId: new Long(it)).save(flush: true, failOnError: true)
+            def followed = UsuarioFacebook.findByFacebookId(new Long(it))
             new FollowUsuario(follower: usuario, followed: followed, estadoSolicitud: "pending", fechaRegistroSolicitud: new Date()).save(flush: true, failOnError: true)
         }
     }
@@ -157,6 +157,7 @@ class UsuarioController {
     }
 
     @Secured(['permitAll'])
+    @Transactional
     def notifyFollowingRequest(){
         println "Send Notifications to " + params.id
         def list = FollowUsuario.findAllByFollowedAndEstadoSolicitud(UsuarioFacebook.findByFacebookId(new Long(params.id)), "pending")
@@ -175,6 +176,7 @@ class UsuarioController {
 
     //Usuarios a los que un usuario sigue.
     @Secured(['permitAll'])
+    @Transactional
     def following(){
         println "Get following (Accept or Pending) friend: -> " + params.id
         def usuario = UsuarioFacebook.findByFacebookId(new Long(params.id))
@@ -195,7 +197,9 @@ class UsuarioController {
     }
 
     @Secured(['permitAll'])
+    @Transactional
     def friendFindRequest(){
+        println "User id: " + params.id
         def usuario = UsuarioFacebook.findByFacebookId(new Long(params.id))
         JSONArray list = new JSONArray()
 
@@ -203,7 +207,6 @@ class UsuarioController {
         follower.each {it ->
             def user = LocalizacionUsuario.findAllByUsuario(it.follower, [sort: 'fechaLocalizacion', order:'des']).first()
             JSONObject jsonObject = new JSONObject()
-
 
             jsonObject.put("id",user.usuario.facebookId.toString())
             jsonObject.put("nombre",user.usuario.firstname + " " + user.usuario.lastname)
@@ -226,10 +229,13 @@ class UsuarioController {
             list.add(jsonObject)
         }
 
+        println(list as JSON)
+
         render list as JSON
     }
 
     @Secured(['permitAll'])
+    @Transactional
     def friendsShareLocationRequest(){
         println "Find Friend of " + params.id + " for Share Location"
         def usuario = UsuarioFacebook.findByFacebookId(new Long(params.id))

@@ -131,7 +131,7 @@ environments {
 new File(logHome).mkdirs()
 def applicationName = appName
 
-log4j.main = {
+log4j = {
     def layout = new PatternLayout("%d %-5p %c %x - %m%n")
     def logName = { String baseName -> "${logHome}/${applicationName}-${baseName}.log" }
 
@@ -149,10 +149,9 @@ log4j.main = {
     }
 
     def infoLogged = [
-            'grails.app.conf',
-            'grails.app.controllers.sncpucmm',
-            'grails.app.domain.sncpucmm',
-            'grails.plugin.databasemigration'
+        'grails.app.conf',
+        'grails.app.controllers.sncpucmm',
+        'grails.app.domain.sncpucmm'
     ]
 
     // Mirror logs to stdout and info logging

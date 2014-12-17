@@ -275,6 +275,7 @@ class TourController {
     }
 
     @Secured(['permitAll'])
+    @Transactional
     def list(){
         JSONObject jsonObject = new JSONObject()
         JSONArray jsonTours = new JSONArray()
@@ -349,15 +350,17 @@ class TourController {
     @Secured(['permitAll'])
     @Transactional
     def updateSubscriber(){
+        println "Update Suscriber from " + params.id
+        def usuario = UsuarioFacebook.findByFacebookId(new Long(params.id))
+        println usuario
         JSONArray usuarioLocalizacionList = new JSONArray(params.usuarioLocalizacionList)
         if(usuarioLocalizacionList.size() > 0) {
             usuarioLocalizacionList.each { it ->
                 JSONObject jsonObject = new JSONObject(it.toString())
-                def facebookId = new Long(jsonObject.getString("idUsuario"))
                 def nodoId = jsonObject.getInt("idNodo")
                 def fechaLocalizacion = new Date(jsonObject.getString("fechaLocalizacion"))
 
-                new LocalizacionUsuario(usuario: UsuarioFacebook.findByFacebookId(facebookId), nodo: Nodo.findById(nodoId), fechaLocalizacion: fechaLocalizacion).save(failOnError: true, flush: true)
+                new LocalizacionUsuario(usuario: usuario, nodo: Nodo.findById(nodoId), fechaLocalizacion: fechaLocalizacion).save(failOnError: true, flush: true)
             }
         }
 
@@ -371,11 +374,11 @@ class TourController {
 
                 if (usuarioTour.getString("request") == "create") {
                     UsuarioTour newUsuarioTour = new UsuarioTour(
-                            usuario: UsuarioFacebook.findById(new Long(usuarioTour.getString("idUsuario"))),
+                            usuario: usuario,
                             tour: Tour.findById(usuarioTour.getInt("idTour")),
                             estado: usuarioTour.getString("estado"),
-                            fechaInicio: Date.parse("dd/MM/yyyy HH:mm:ss", usuarioTour.getString("fechaInicio")),
-                            fechaFin: Date.parse("dd/MM/yyyy HH:mm:ss", usuarioTour.getString("fechaFin"))
+                            fechaInicio: usuarioTour.containsKey("fechaInicio") ? Date.parse("dd/MM/yyyy HH:mm:ss", usuarioTour.getString("fechaInicio")) : null,
+                            fechaFin: usuarioTour.containsKey("fechaFin") ? Date.parse("dd/MM/yyyy HH:mm:ss", usuarioTour.getString("fechaFin")) : null
                     )
                     newUsuarioTour = newUsuarioTour.save(flush: true, failOnError: true)
 
@@ -384,42 +387,43 @@ class TourController {
                         new DetalleUsuarioTour(
                                 usuarioTour: newUsuarioTour,
                                 puntoReunionTour: PuntoReunionTour.findById(detalleUsuarioTour.getInt("idPuntoReunionTour")),
-                                fechaInicio: Date.parse("dd/MM/yyyy HH:mm:ss", detalleUsuarioTour.getString("fechaInicio")),
-                                fechaFin: Date.parse("dd/MM/yyyy HH:mm:ss", detalleUsuarioTour.getString("fechaFin")),
+                                fechaInicio: detalleUsuarioTour.containsKey("fechaInicio") ? Date.parse("dd/MM/yyyy HH:mm:ss", detalleUsuarioTour.getString("fechaInicio")) : null,
+                                fechaFin: detalleUsuarioTour.containsKey("fechaFin") ? Date.parse("dd/MM/yyyy HH:mm:ss", detalleUsuarioTour.getString("fechaFin")) : null,
                                 fechaLlegada: detalleUsuarioTour.containsKey("fechaLlegada") ? Date.parse("dd/MM/yyyy HH:mm:ss", detalleUsuarioTour.getString("fechaLlegada")) : null
                         ).save(flush: true, failOnError: true)
                     }
                 } else {
-                    UsuarioTour updateUsuarioTour = UsuarioTour.findByUsuarioAndTour(UsuarioFacebook.findById(new Long(usuarioTour.getString("idUsuario"))), Tour.findById(usuarioTour.getInt("idTour")))
+                    UsuarioTour updateUsuarioTour = UsuarioTour.findByUsuarioAndTour(usuario, Tour.findById(usuarioTour.getInt("idTour")))
                     updateUsuarioTour.estado = usuarioTour.getString("estado")
-                    updateUsuarioTour.fechaInicio = Date.parse("dd/MM/yyyy HH:mm:ss", usuarioTour.getString("fechaInicio"))
-                    updateUsuarioTour.fechaFin = Date.parse("dd/MM/yyyy HH:mm:ss", usuarioTour.getString("fechaFin"))
+                    updateUsuarioTour.fechaInicio = usuarioTour.containsKey("fechaInicio") ? Date.parse("dd/MM/yyyy HH:mm:ss", usuarioTour.getString("fechaInicio")) : null
+                    updateUsuarioTour.fechaFin = usuarioTour.containsKey("fechaFin") ? Date.parse("dd/MM/yyyy HH:mm:ss", usuarioTour.getString("fechaFin")) : null
                     updateUsuarioTour.save(flush: true)
 
                     detalleUsuarioTourList.each { detalle ->
                         JSONObject detalleUsuarioTour = new JSONObject(detalle.toString())
                         DetalleUsuarioTour updateDUT = DetalleUsuarioTour.findByUsuarioTourAndPuntoReunionTour(updateUsuarioTour, PuntoReunionTour.findById(detalleUsuarioTour.getInt("idPuntoReunionTour")))
                         updateDUT.puntoReunionTour = PuntoReunionTour.findById(detalleUsuarioTour.getInt("idPuntoReunionTour"))
-                        updateDUT.fechaInicio = Date.parse("dd/MM/yyyy HH:mm:ss", detalleUsuarioTour.getString("fechaInicio"))
-                        updateDUT.fechaFin = Date.parse("dd/MM/yyyy HH:mm:ss", detalleUsuarioTour.getString("fechaFin"))
-                        updateDUT.fechaLlegada = Date.parse("dd/MM/yyyy HH:mm:ss", detalleUsuarioTour.getString("fechaLlegada"))
+                        updateDUT.fechaInicio = detalleUsuarioTour.containsKey("fechaInicio") ? Date.parse("dd/MM/yyyy HH:mm:ss", detalleUsuarioTour.getString("fechaInicio")): null
+                        updateDUT.fechaFin = detalleUsuarioTour.containsKey("fechaFin") ? Date.parse("dd/MM/yyyy HH:mm:ss", detalleUsuarioTour.getString("fechaFin")) : null
+                        updateDUT.fechaLlegada = detalleUsuarioTour.containsKey("fechaLlegada") ? Date.parse("dd/MM/yyyy HH:mm:ss", detalleUsuarioTour.getString("fechaLlegada")) : null
                         updateDUT.save(flush: true)
                     }
                 }
             }
         }
+
         JSONObject jsonObject = new JSONObject()
         JSONArray jsonTours = new JSONArray()
         JSONArray jsonUsuarioTour = new JSONArray()
 
-        def tours = Tour.findAllByFechaFinGreaterThanEquals(new Date())
+        //def tours = Tour.findAll{ fechaFin >= new Date() }
+        def tours = Tour.findAll()
         if(tours.size() > 0){
             tours.each { it ->
                 JSONObject tour = new JSONObject();
                 JSONArray puntos = new JSONArray();
 
                 tour.put("id", it.id)
-                tour.put("idUsuarioCreador", it.creador.id)
                 tour.put("nombreTour", it.nombreTour)
                 tour.put("fechaCreacion", it.fechaCreacion.format("dd/MM/yyyy HH:mm:ss"))
                 tour.put("fechaInicio", it.fechaInicio.format("dd/MM/yyyy HH:mm:ss"))
@@ -440,14 +444,14 @@ class TourController {
                 jsonTours.put(tour)
             }
 
-            def usuarioTours = UsuarioTour.findAllByUsuario(UsuarioFacebook.findByFacebookId(new Long(params.id)))
+            def usuarioTours = UsuarioTour.findAllByUsuario(usuario)
 
             usuarioTours.each { ut ->
                 JSONObject userTour = new JSONObject();
                 JSONArray detallesUT = new JSONArray();
 
                 userTour.put("id", ut.id)
-                userTour.put("idUsuario", ut.usuario.facebookId.toString())
+                userTour.put("idUsuarioFacebook", ut.usuario.facebookId.toString())
                 userTour.put("idTour", ut.tour.id)
                 userTour.put("estado", ut.estado)
                 if(ut.fechaInicio)

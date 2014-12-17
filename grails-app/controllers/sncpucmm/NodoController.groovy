@@ -106,6 +106,7 @@ class NodoController {
     }
 
     @Secured(['permitAll'])
+    @Transactional
     def actualizar (){
         def nodos = Nodo.list()
         def ubicaciones = Ubicacion.list()
@@ -120,7 +121,7 @@ class NodoController {
 
         ubicaciones.each {
             JSONObject json = new JSONObject()
-            json.put("id", it.id.toString())
+            json.put("id", it.id)
             json.put("cantidadDePlantas", it.cantidadDePlantas)
             json.put("nombre", it.nombre)
             json.put("abreviacion", it.abreviacion)
@@ -142,8 +143,8 @@ class NodoController {
             JSONObject json = new JSONObject()
             json.put("id", it.id)
             json.put("nodo", it.nodo.id)
-            json.put("latitud", it.latitud)
-            json.put("longitud", it.longitud)
+            json.put("latitud", it.latitud.toString())
+            json.put("longitud", it.longitud.toString())
             coordenadaArray.add(json)
         }
         neighbor.each {
