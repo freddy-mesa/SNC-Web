@@ -42,7 +42,7 @@ class NodoController {
 
         request.withFormat {
             form multipartForm {
-                flash.message = message(code: 'default.created.message', args: [message(code: 'nodo.label', default: 'Nodo'), nodoInstance.id])
+                flash.message = "Se ha creado el nodo " + nodoInstance.nombre + "."
                 redirect nodoInstance
             }
             '*' { respond nodoInstance, [status: CREATED] }
@@ -69,7 +69,7 @@ class NodoController {
 
         request.withFormat {
             form multipartForm {
-                flash.message = message(code: 'default.updated.message', args: [message(code: 'Nodo.label', default: 'Nodo'), nodoInstance.id])
+                flash.message = "Se ha actualizado el nodo " + nodoInstance.nombre + "."
                 redirect nodoInstance
             }
             '*' { respond nodoInstance, [status: OK] }
@@ -88,7 +88,7 @@ class NodoController {
 
         request.withFormat {
             form multipartForm {
-                flash.message = message(code: 'default.deleted.message', args: [message(code: 'Nodo.label', default: 'Nodo'), nodoInstance.id])
+                flash.message = "Se ha eliminado el nodo " + nodoInstance.nombre + "."
                 redirect action: "index", method: "GET"
             }
             '*' { render status: NO_CONTENT }
@@ -98,13 +98,14 @@ class NodoController {
     protected void notFound() {
         request.withFormat {
             form multipartForm {
-                flash.message = message(code: 'default.not.found.message', args: [message(code: 'nodo.label', default: 'Nodo'), params.id])
+                flash.message = "No se encuentra el nodo"
                 redirect action: "index", method: "GET"
             }
             '*' { render status: NOT_FOUND }
         }
     }
 
+    @Secured("permitAll")
     def actualizar (){
         def nodos = Nodo.list()
         def ubicaciones = Ubicacion.list()
@@ -131,6 +132,7 @@ class NodoController {
             json.put("nombre", it.nombre)
             json.put("activo", it.activo)
             json.put("edificio", it.edificio)
+            json.put("planta", it.planta)
             if(it.ubicacion)
                 json.put("ubicacion", it.ubicacion.id)
             else

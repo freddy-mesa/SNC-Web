@@ -7,7 +7,9 @@ class UrlMappings {
             }
         }
 
-        "/"(view:"/index")
+        "/"(controller: "dashboard", action: "index")
+        "/index"(controller: "dashboard", action: "index")
+        "/index.gsp"(controller: "dashboard", action: "index")
         "500"(view:'/error')
 	}
 }

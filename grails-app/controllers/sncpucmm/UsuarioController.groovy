@@ -43,7 +43,7 @@ class UsuarioController {
 
         request.withFormat {
             form multipartForm {
-                flash.message = message(code: 'default.created.message', args: [message(code: 'usuario.label', default: 'Usuario'), usuarioInstance.id])
+                flash.message = "Se ha creado el usuario " + usuarioInstance.username + "."
                 redirect usuarioInstance
             }
             '*' { respond usuarioInstance, [status: CREATED] }
@@ -70,7 +70,7 @@ class UsuarioController {
 
         request.withFormat {
             form multipartForm {
-                flash.message = message(code: 'default.updated.message', args: [message(code: 'Usuario.label', default: 'Usuario'), usuarioInstance.id])
+                flash.message = "Se ha actualizado el usuario " + usuarioInstance.username + "."
                 redirect usuarioInstance
             }
             '*'{ respond usuarioInstance, [status: OK] }
@@ -89,7 +89,7 @@ class UsuarioController {
 
         request.withFormat {
             form multipartForm {
-                flash.message = message(code: 'default.deleted.message', args: [message(code: 'Usuario.label', default: 'Usuario'), usuarioInstance.id])
+                flash.message = "Se ha eliminado el usuario " + usuarioInstance.username + "."
                 redirect action:"index", method:"GET"
             }
             '*'{ render status: NO_CONTENT }
@@ -99,7 +99,7 @@ class UsuarioController {
     protected void notFound() {
         request.withFormat {
             form multipartForm {
-                flash.message = message(code: 'default.not.found.message', args: [message(code: 'usuario.label', default: 'Usuario'), params.id])
+                flash.message = "No se encuentra el usuario."
                 redirect action: "index", method: "GET"
             }
             '*'{ render status: NOT_FOUND }
