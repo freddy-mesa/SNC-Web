@@ -1,4 +1,6 @@
 import grails.converters.JSON
+import grails.util.Holders
+import groovy.sql.Sql
 import sncpucmm.TipoUsuario
 import sncpucmm.Usuario
 import sncpucmm.UsuarioTipoUsuario
@@ -17,6 +19,12 @@ class BootStrap {
         //Asignando usuarios a su tipo.
         UsuarioTipoUsuario.create(admin, tipoAdmin, true);
         UsuarioTipoUsuario.create(usuario, tipoUsuario, true);
+
+        /*String sqlFilePath = 'Scripts.sql'
+        String sqlString = new File(sqlFilePath).text
+        Sql sql = Sql.newInstance(Holders.config.dataSource.url, Holders.config.dataSource.username, Holders.config.dataSource.password, Holders.config.dataSource.driverClassName)
+        sql.execute(sqlString)*/
+
     }
     def destroy = {
     }

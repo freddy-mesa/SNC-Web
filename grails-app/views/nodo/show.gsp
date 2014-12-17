@@ -14,23 +14,31 @@
             </div>
             <!-- /.col-lg-12 -->
         </div>
-		<div id="show-nodo" class="content scaffold-show" role="main">
+        <div class="row">
 			<g:if test="${flash.message}">
-			<div class="message" role="status">${flash.message}</div>
-			</g:if>
-			<ol class="property-list nodo">
+                <div class="alert alert-success" role="status">${flash.message}</div>
+            </g:if>
+            <div class="col-lg-2"></div>
+            <div class="  col-lg-6">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        Datos
+                    </div>
+                    <div class="panel-body">
 
                 <g:if test="${nodoInstance?.nombre}">
-                    <li class="fieldcontain">
-                        <span id="nombre-label" class="property-label"><g:message code="nodo.nombre.label" default="Nombre" /></span>
+                    <div class="col-lg-12">
+                    <div class="col-lg-2"></div>
+                        <label id="nombre-label" class="col-lg-4"><g:message code="nodo.nombre.label" default="Nombre" /></label>
 
                         <span class="property-value" aria-labelledby="nombre-label"><g:fieldValue bean="${nodoInstance}" field="nombre"/></span>
+                    </div>
 
-                    </li>
                 </g:if>
 
-				<li class="fieldcontain">
-					<span id="activo-label" class="property-label"><g:message code="nodo.activo.label" default="Activo" /></span>
+                        <div class="col-lg-12">
+                        <div class="col-lg-2"></div>
+					<label id="activo-label" class="col-lg-4"><g:message code="nodo.activo.label" default="Activo" /></label>
 
 
                     <g:if test="${nodoInstance.activo}">
@@ -39,11 +47,16 @@
                     <g:else>
                         <span class="property-value" aria-labelledby="activo-label">No</span>
                     </g:else>
+                            </div>
 
-				</li>
 
-			</ol>
-            <g:link class="btn btn-primary" action="edit" resource="${nodoInstance}"><g:message code="default.button.edit.label" default="Edit" /></g:link>
-		</div>
+			</div>
+                    <div class="col-lg-5"></div>
+                    <div class="form-group">
+                        <g:link class="btn btn-primary" action="edit" resource="${nodoInstance}">Editar</g:link>
+		            </div>
+                </div>
+                    </div>
+                </div>
 	</body>
 </html>
