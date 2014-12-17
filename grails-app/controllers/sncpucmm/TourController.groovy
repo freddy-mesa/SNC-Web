@@ -347,6 +347,7 @@ class TourController {
     }
 
     @Secured(['permitAll'])
+    @Transactional
     def updateSubscriber(){
         JSONArray usuarioLocalizacionList = new JSONArray(params.usuarioLocalizacionList)
         if(usuarioLocalizacionList.size() > 0) {

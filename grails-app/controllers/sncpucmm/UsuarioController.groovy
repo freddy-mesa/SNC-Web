@@ -107,6 +107,7 @@ class UsuarioController {
     }
 
     @Secured(['permitAll'])
+    @Transactional
     def crear(){
         println "crear -> " + params.id
         def usuarioSearch = UsuarioFacebook.findByFacebookId(new Long(params.id))
@@ -124,6 +125,7 @@ class UsuarioController {
 
     //Recibe una petición de following
     @Secured(['permitAll'])
+    @Transactional
     def followRequest(){
         println "followRequest -> " + params.json
         JSONObject request = new JSONObject(params.json)
@@ -140,6 +142,7 @@ class UsuarioController {
 
     //Recibe la respuesta de solicitud de una petición de following.
     @Secured(['permitAll'])
+    @Transactional
     def followResponse(){
         println "followResponse -> " + params.followed + " " + params.status + " " + params.follower
         def followUsuario = FollowUsuario.findByFollowerAndFollowed(UsuarioFacebook.findByFacebookId(new Long(params.follower)), UsuarioFacebook.findByFacebookId(new Long(params.followed)))
@@ -254,6 +257,7 @@ class UsuarioController {
     }
 
     @Secured(['permitAll'])
+    @Transactional
     def notifySharedLocationRequest() {
         def usuario = UsuarioFacebook.findByFacebookId(new Long(params.id))
 
@@ -276,6 +280,7 @@ class UsuarioController {
     }
 
     @Secured(['permitAll'])
+    @Transactional
     def sharedLocationRequest() {
         def sender = UsuarioFacebook.findByFacebookId(new Long(params.id))
 
